@@ -25,7 +25,8 @@ class DM extends Client {
     constructor() {
         super({
             intents: [
-                IntentsBitField.Flags.Guilds
+                IntentsBitField.Flags.Guilds,
+                IntentsBitField.Flags.GuildVoiceStates
             ]
         });
 

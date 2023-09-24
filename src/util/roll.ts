@@ -56,6 +56,7 @@ export class Roll {
         // Extracting title from roll string
         let title: any = m.replace(/^[^#]*#/, "").trim()
         m = m.replace(/([^#])#.*/, "$1").trim()
+        title = title == m ? "" : title
 
         // Isolating math
         m = m
